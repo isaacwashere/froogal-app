@@ -1,0 +1,27 @@
+              <div class = "pictures">
+                            {this.renderSwitch()}
+              </div>
+               
+               <div class="icons">
+               <div class="row">
+                 {[...Array(4)].map((e, i) => <div class="column" ><img class="wine" src={wine}     alt="wine" key={i}/></div>)}
+               </div>
+               
+               <div class="row">
+                 {[...Array(5)].map((e, i) => <div class="column" ><img class="set" src={beer}     alt="beer" key={i}/></div>)}
+                 </div>
+               
+               <div class="row">
+                 {[...Array(5)].map((e, i) => <div class="column" ><img class="set" src={cocktail} alt="cocktail" key={i}/></div>)}
+                 </div>
+               
+               <div class="row">
+                 {[...Array(5)].map((e, i) => <div class="column" ><img class="set" src={spirit}   alt="spirit" key={i}/></div>)}
+               </div>
+               </div>
+
+
+
+               <div class = "distance">
+                 {this.state.distance}
+                </div>

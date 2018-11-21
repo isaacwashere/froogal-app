@@ -1,0 +1,528 @@
+*{
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+html{
+  height:100%;
+  width: 100%;
+   position:relative;
+}
+
+body{
+  min-height: 100%;
+  min-width: 100%;
+  margin:0;
+  background-color: #1d032b;
+}
+
+.or{
+    font-size: 60px;
+    margin: 0 !important;
+    position: absolute;
+    left: 45%;
+    top:220px;
+
+}
+.topBarGroup{
+  position: sticky;
+  top: 0;
+  background-image: url(<%= asset_path('backgroundTop.png') %>);
+  background-size: cover;
+  z-index: 999;
+}
+
+.main-expansion{
+    background-color: #1d032b;
+}
+.column {
+
+    padding: 5px;
+    color: white;
+    font-size: 50px;
+    width: 400px
+}
+
+.row {
+    width: 100%;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    background-color: #1d032b;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    width:100%;
+    height:100%
+}
+
+.columns{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:100%
+}
+
+.icon-quantity{
+    margin: 0;
+    margin-left: 28px;
+}
+.pair{
+    display:flex;
+    flex-direction:row;
+    color:white;
+    font-size: 80px;
+    justify-content:space-between
+}
+.address{
+    float:left;
+    margin-top: 20px;
+}
+ <%# .icons{
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 126px;
+    align-content: center;
+    margin-top: -19px;
+} %>
+
+.icon-container{
+    background-color: #1d032b !important;
+    width: 100% !important;
+    height: auto ;
+    padding-bottom: 76px;
+}
+
+.images{
+    width: 10px;
+    height: 10px;
+    
+}
+
+.banner-picture{
+    width: 916px;
+    height: 450px;
+    margin-left: 31px;
+}
+
+.titles{
+    text-align: center;
+    position: relative;
+    top: -66px;
+    background-color: none;
+    margin-top: -16px;
+    margin-left: 30px;
+    margin-right: -1px;
+}
+
+h1{
+    font-family: 'Poiret One', cursive;
+    color:white;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    padding-top: 92px;
+    margin-bottom: 24px;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif !important;
+    padding-bottom: 5px;
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 70px !important;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5), rgba(0,0,0,1) );
+}
+
+
+.venue-container{
+ 
+
+}
+.MuiExpansionPanelSummary-content-82{
+margin-bottom: 30px !important;
+
+}
+
+.venue-address{
+    font-size: 33px;
+    text-align: center;
+    margin-left: 8px;
+    margin-right: 7px;
+    position: relative;
+    margin-top: -7px;
+    height: 96px; 
+    bottom: 34px;
+    color: white;
+    font-family: 'Questrial', sans-serif !important;
+    display: flex;
+    flex-direction: column; 
+    background: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5), rgba(0,0,0,1) )
+
+}
+
+.venue-rating{
+    float: right;
+    position: absolute;
+    bottom: 360px;
+    right: 40px;
+    font-size: 44px;
+    padding-bottom: 22px;
+}
+
+
+
+.placeholder-pic{
+    width: 100%;
+    height: 100%;
+    background-image: cover;
+    margin-top: 82px;
+}
+
+.landing-page{
+    height: 50em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pictures{
+    position: relative;
+}
+
+.pictures-happy{
+    position: relative;
+    background-color: turquoise;
+}
+
+.distance{
+    position: absolute;
+    bottom: 433px;
+    margin-left: 47px;
+    font-size: 44px;
+    color: #d9a7c7 !important;
+}
+/***************ICONS***********/
+.fa-beer{
+ font-size: 80px;
+ background: -webkit-linear-gradient(#fceabb,#fdbb2d,#f8b500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-wine-glass-alt{
+    font-size: 80px;
+     background: -webkit-linear-gradient(#1cefff,#1cefff,#a8ff78,#78ffd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.fa-cocktail{
+    font-size: 80px;
+    background: -webkit-linear-gradient(#fdbb2d,#b21f1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+#id-wine{
+    background: -webkit-linear-gradient(#1cefff,#1cefff,#a8ff78,#78ffd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#id-beer{
+     background: -webkit-linear-gradient(#fceabb,#fdbb2d,#f8b500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#id-cocktail{
+     background: -webkit-linear-gradient(#fdbb2d,#b21f1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+#id-spirit{
+    background: -webkit-linear-gradient(#43C6AC,#F8FFAE,#f8b500);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+<%# .fa-beer{
+ font-size: 80px;
+ color: white;
+ padding-right: 5px;
+ margin-left: 500px;
+ margin-top: -87px;
+ background: -webkit-linear-gradient(#fceabb,#fdbb2d,#f8b500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-wine-glass-alt{
+    font-size: 80px;
+    color: white;
+    padding-right: 5px;
+    position: relative;
+    margin-left: 70px;
+    background: -webkit-linear-gradient(#1cefff,#1cefff,#a8ff78,#78ffd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.fa-cocktail{
+    font-size: 80px;
+    color: white;
+    padding-right: 5px;
+    margin-left: 500px;
+    margin-top: 50px;
+    background: -webkit-linear-gradient(#fdbb2d,#b21f1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+} %>
+
+.spirit{
+    color    : white;
+    width: 90px;
+    height: 90px;
+ 
+}
+
+<%# .spirit{
+    color    : white;
+    padding-right: 5px;
+    padding-bottom: 38px;
+    margin-top: -103px;
+    width: 90px;
+    height: 128px;
+    margin-left: 55px;
+ 
+} %>
+
+.spirit-type{
+    margin-right: -90px;
+    margin-top: -84px;
+}
+.p-type{
+    margin-left: 141px;
+    display: inline;
+    margin-top: 15px;
+    font-size: 80px;
+     background: -webkit-linear-gradient(#43C6AC,#F8FFAE,#f8b500);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+
+}
+
+.MuiCollapse-container-184.MuiCollapse-entered-185{
+    background-color: #1d032b;
+}
+
+.MuiButtonBase-root-101.MuiExpansionPanelSummary-root-128.MuiExpansionPanelSummary-expanded-129{
+    background-color: #1d032b;
+}
+
+.MuiPaper-root-10.MuiPaper-elevation4-16.MuiAppBar-root-1.MuiAppBar-positionStatic-5.MuiAppBar-colorPrimary-8{
+  background-color: rgba(162, 12, 56, 0);
+  width: 40%;
+  margin-left: 30%;
+}
+
+.sort_icon_parent{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 190px;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 10%, rgba(0, 0, 0, 0.3),80%, rgba(0, 0, 0, 0)); */
+
+}
+
+ .sort_icon{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 80px
+}
+
+
+.description-cont{
+  width:80%;
+  height: 70%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.description-col{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sort-description{
+  font-size: 7em;
+}
+
+.fa-certificate{
+  background: -webkit-linear-gradient(#f7249c, #e100ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#fa-certificate-white{
+  background: rgba(255, 255, 255, 0.50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sort-description1{
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(#f7249c, #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-map-marker-alt{
+  background: -webkit-linear-gradient(#e100ff, #7f00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#fa-map-marker-alt-white{
+  background: rgba(255, 255, 255, 0.50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sort-description2{
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(#e100ff, #7f00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-dollar-sign{
+  background: -webkit-linear-gradient(#8f00ff, #1cb5e0, #1cb5e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.45); */
+
+}
+
+#fa-dollar-sign-white{
+  background: rgba(255, 255, 255, 0.50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-info{
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 6em;
+  right:0;
+  margin-right: 35px;
+  margin-top: 2em;
+}
+
+.sort-description3{
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(#8f00ff, #1cb5e0, #1cb5e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-star{
+  background: -webkit-linear-gradient(#1cb5e0, #24f7ab);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#fa-star-white{
+  background: rgba(255, 255, 255, 0.50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sort-description4{
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(#1cb5e0, #24f7ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rating{
+    color:#fbc7d4 !important;
+    -webkit-text-fill-color:    #98EBE3;
+}
+
+.sorting-table{
+  font-size: 5em
+}
+
+.happy-label{
+  background-color: rgb(56, 181, 230);
+  width: 10px;
+  margin-right: 20px
+}
+
+.welcome{
+  display: flex;
+  align-self: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 2.5em;
+  text-align: center;
+  bottom:0;
+}
+
+.you-can{
+  margin-top:0;
+  margin-bottom: 80px
+}
+
+.MuiExpansionPanelSummary-root-92{
+    background-color: #1d032b !important;
+}
+
+.main{
+    margin-top: 90px;
+}
+
+.happy-hour{
+  background-color: rgb(29, 158, 199) !important
+}
+
+.info-line{
+    margin-bottom: -63px;
+}
+.expansion {
+    background-color: #1d032b;
+    margin-bottom: -20px;
+}
+
+.myClass{
+    background-color: #1d032b !important;
+}
+
+
+.phone{
+    color: white;
+    font-size: 30px;
+    float: right !important;
+}
+
+.all{
+    width: 100%;
+}
